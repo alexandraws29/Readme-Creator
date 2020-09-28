@@ -1,8 +1,5 @@
-// function to generate markdown for README
-function generateMarkdown(data) {
-    
-return `
-# ${data.title}
+
+# Readme Creator
 ## Table of Contents
 - [Description](##Description)
 - [Installation](##How-to-install)
@@ -11,25 +8,19 @@ return `
 - [Tests](##How-to-test-the-application)
 - [Licence](##Licencing-information)
 ## Description
-> ${data.description}
+> This application creates a professional README file
 ## How To Install The Application
-> ${data.installation}
+> Simply initiate the program and answer the questions 
 ## Usage Information
-> ${data.usage}
+> Use this creator to build a README with less time and work so that the focus can be on your main development project
 ## How To Contribute
-> ${data.contributing}
+> Email me with questions or contributions
 ## How To Test The Application
-> ${data.tests}
+> Answer the questions and build a README of your own
 ## Licencing Information
-> ${data.license}
+> Public Domain
 ## GitHub Profile
-> github.com/${data.github} 
+> github.com/alexandraws29 
 ## Contact Me Via Email
-> <${data.email}>
-    `;
-  }
-  
-  
-  module.exports = generateMarkdown;
-  
-  
+> <alexandraws29@outlook.com>
+    
