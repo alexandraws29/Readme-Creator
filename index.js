@@ -58,7 +58,22 @@ function questions() {
 
 
 // function to write README file
-function writeToFile(fileName, data) {
+function writeToFile(data) {
+    return new Promise((resolve, reject) => {
+        fs.writeFile('./README.md', generateMarkdown(data), err => {
+            if (err) {
+                reject(err);
+                return;
+            } else {
+                
+                resolve({
+                    ok: true,
+                    message: 'Your professional README has been created!'
+                });
+            }
+                
+        });
+    })
 }
 
 // function to initialize program
