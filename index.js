@@ -77,9 +77,12 @@ function writeToFile(data) {
 }
 
 // function to initialize program
-function init() {
-
-}
+const init = () => {
+    questions()
+    .then(function (data) {
+        return writeToFile(data)
+    })
+};  
 
 // function call to initialize program
 init();
